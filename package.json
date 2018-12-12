@@ -1,10 +1,56 @@
 {
-    "name": "socket-chat-example",
-    "version": "0.0.1",
-    "description": "my first socket.io app",
-    "dependencies": {
-        "express": "^4.15.2",
-        "socket.io": "^2.1.1",
-        "osc": "2.2.0"
-    }
+  "name": "aframe-mocap-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THING-Lab/VR-Mocap-Arena.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/THING-Lab/VR-Mocap-Arena/issues"
+  },
+  "homepage": "https://github.com/THING-Lab/VR-Mocap-Arena#readme",
+  "dependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "aframe": "^0.8.2",
+    "babel-loader": "^8.0.4",
+    "express": "^4.16.4",
+    "osc": "2.2.0",
+    "ramda": "^0.26.1",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.2.0",
+    "three": "^0.99.0",
+    "webpack": "^4.27.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "Firefox > 50"
+            ]
+          }
+        }
+      ]
+    ]
+  }
 }
